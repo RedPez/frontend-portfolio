@@ -5,13 +5,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: monospace;
   line-height: 1.5;
 }
 
 h1,
-h2,
-h3,
+h2 h3,
 h4,
 h5,
 h6 {
@@ -21,3 +20,118 @@ h6 {
 p {
   margin: 0;
 }
+
+/* Navigation Styles */
+
+navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  border-bottom: 5px solid #ff6200;
+  padding-top: 12px;
+}
+
+navBar li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+navBar ul {
+  margin-right: 100px;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  margin-right: auto;
+}
+
+/* Hero Styles */
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.heroImage {
+  height: 300px;
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border-bottom: 5px solid #ff6200;
+}
+
+/* Portfolio Styles */
+
+#portfolioGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "portfolio1 portfolio1 portfolio1"
+    "portfolio2  portfolio2 portfolio3"
+    "portfolio4 portfolio5 portfolio5";
+}
+
+#portfolio1 {
+  grid-area: portfolio1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+#portfolio2 {
+  grid-area: portfolio2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#portfolio3 {
+  grid-area: portfolio3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#portfolio4 {
+  grid-area: portfolio4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#portfolio5 {
+  grid-area: portfolio5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.portfolioHeading {
+  padding: 15px;
+  height: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.porfolioTitle {
+  font-size: 30px;
+}
+
+/* Contact Styles */

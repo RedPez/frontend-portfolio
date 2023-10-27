@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Perrie Routledge // Web Developer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <navbar id="navBar">
+      <header class="header">
+        <h1>Perrie Routledge | Web Developer</h1>
+      </header>
+      <ul class="navText">
+        <li>About</li>
+        <li>Work</li>
+        <li>Contact</li>
+        <li>Resume</li>
+        <li>Socials</li>
+      </ul>
+    </navbar>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <!-- hero banner -->
+    <section class="hero">
+      <img
+        class="heroImage"
+        src="../starter/images/02-portfolio-3.jpg"
+        alt="xxxxxx"
+      />
+      <div class="hero-text">My Portfolio</div>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <!-- main content -->
+    <main class="main-wrapper">
+      <!-- about me container -->
+      <section id="about">
+        <div>
+          <h2 class="porfolioTitle" id="aboutTitle">About</h2>
+        </div>
+        <div>
+          <p class="porfolioText" id="aboutText">
+            This what you need to know about me
+          </p>
+        </div>
+      </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
+      <!-- portfolio container -->
+      <!-- This section is where the flex goes-->
+      <div>
+        <h2 class="porfolioTitle" id="workTitle">Work</h2>
+      </div>
 
+      <section id="portfolioGrid">
+        <article id="portfolio1" class="portfolioGridArea">
+          <div class="portfolioHeading">Surf Report</div>
+        </article>
+        <article id="portfolio2" class="portfolioGridArea">
+          <div class="portfolioHeading">Coming Soon</div>
+        </article>
+        <article id="portfolio3" class="portfolioGridArea">
+          <div class="portfolioHeading">Coming Soon</div>
+        </article>
+        <article id="portfolio4" class="portfolioGridArea">
+          <div class="portfolioHeading">Coming Soon</div>
+        </article>
+        <article id="portfolio5" class="portfolioGridArea">
+          <div class="portfolioHeading">Coming Soon</div>
+        </article>
+      </section>
+
+      <!-- contact me container -->
+      <section class="contactMe-section">
+        <div>
+          <h2 class="porfolioTitle" id="contactTitle">Contact</h2>
+        </div>
+        <div class="contactContent" id="contactContent">
+          <ul>
+            <li id="email">email</li>
+            <li id="resume">Resume</li>
+            <li id="socials">Socials</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Made with 🩸🥵😭</footer>
+  </body>
 </html>
