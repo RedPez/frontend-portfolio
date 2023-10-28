@@ -9,10 +9,10 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2 h3,
-h4,
-h5,
+h3 {
+  font-size: 30px;
+}
+
 h6 {
   margin: 0;
 }
@@ -29,12 +29,14 @@ navBar {
   align-content: center;
   border-bottom: 5px solid #ff6200;
   padding-top: 12px;
+  padding-bottom: 1%;
 }
 
 navBar li {
   list-style: none;
   display: inline-block;
   padding: 8px 30px;
+
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -42,42 +44,112 @@ navBar li {
 
 navBar ul {
   margin-right: 100px;
+  margin-bottom: 0px;
 }
 
 header {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
+  padding: 0px 1%;
   color: rgb(0, 0, 0);
-  font-size: 12px;
+  font-size: 8px;
   margin-right: auto;
+  margin-bottom: 0px;
 }
 
 /* Hero Styles */
 
 .hero {
+  display: flex;
   position: relative;
   text-align: center;
   color: white;
 }
 
 .heroImage {
-  height: 300px;
+  flex-grow: 1;
+  height: 800px;
   width: 100%;
 }
 
 .hero-text {
+  flex-grow: 1;
   position: absolute;
-  bottom: 20px;
-  right: 16px;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
+  top: 25%;
+  left: 3%;
+  padding: 10px 10px;
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 16px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Main wrapper */
+
+/* About me styles */
+
+#about {
+  margin: 5% 5%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: "aboutTitle aboutText";
+}
+
+#aboutTitle {
+  margin: 0px 5%;
+}
+
+#about p {
+  margin: 1% 5%;
+  font-size: 14px;
+}
+
+.aboutImage {
+  float: right;
+  display: grid;
+  margin: 1% 5%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+  width: 210px;
   border-bottom: 5px solid #ff6200;
 }
 
 /* Portfolio Styles */
 
+#portfolioMain {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: "  workTitle portfolioGrid";
+}
+
+/* Portfolio image grid */
 #portfolioGrid {
   margin: 0px 5%;
   display: grid;
@@ -88,7 +160,6 @@ header {
     "portfolio2  portfolio2 portfolio3"
     "portfolio4 portfolio5 portfolio5";
 }
-
 #portfolio1 {
   grid-area: portfolio1;
   background-image: url("../images/02-portfolio-1.jpg");
@@ -113,7 +184,7 @@ header {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
-.categoryGridArea {
+.portfolioGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,14 +195,43 @@ header {
 }
 
 .portfolioHeading {
-  padding: 15px;
-  height: 25px;
+  padding: 10px;
+  height: fit-content;
+  width: auto;
   color: rgb(0, 0, 0);
   font-size: 18px;
+  border-bottom: 5px solid #ff6200;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.porfolioTitle {
-  font-size: 30px;
+#workTitle {
+  margin: 0px 5%;
 }
 
 /* Contact Styles */
+
+#contact {
+  margin: 5% 5%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-areas: "CotactTitle contactContent";
+}
+
+#contactTitle {
+  margin-top: 0%;
+}
+
+#contact li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin: 0px 0px 30px;
+}
