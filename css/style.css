@@ -27,6 +27,13 @@ a {
   color: black;
 }
 
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #d0e5e6;
+}
+
 /* Navigation Styles */
 
 navBar {
@@ -94,6 +101,7 @@ header {
 }
 
 /* The typing effect */
+
 @keyframes typing {
   from {
     width: 0;
@@ -263,9 +271,41 @@ header {
   filter: drop-shadow(3px 3px 1px rgb(182, 185, 182));
 }
 
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #d0e5e6;
+@media screen and (max-width: 1280px) {
+  .heroImage {
+    max-height: 700px;
+  }
+  .contactGridArea {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heroImage {
+    max-height: 600px;
+  }
+  .contactGridArea {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-text {
+    display: none;
+  }
+  .contactGridArea {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .heroImage {
+    max-height: 500px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .heroImage {
+    max-height: 400px;
+  }
 }
