@@ -124,6 +124,7 @@ header {
   grid-template-columns: 15% 85%;
   grid-template-areas: "aboutTitle aboutText";
   background-color: white;
+  border-radius: 2px;
   padding: 100px 50px;
 }
 
@@ -172,7 +173,7 @@ header {
 }
 #portfolio1 {
   grid-area: portfolio1;
-  background-image: url("../images/corn1.png");
+  background-image: url("../images/rustic\ corn.png");
 }
 #portfolio2 {
   grid-area: portfolio2;
@@ -191,7 +192,7 @@ header {
 
 #portfolio5 {
   grid-area: portfolio5;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/shakes\ bar.png");
 }
 
 .portfolioGridArea {
@@ -221,7 +222,7 @@ header {
 
 /* Contact Styles */
 #contactMain {
-  margin: 5% 5% 7%;
+  margin: 5% 5% 5% 7%;
   padding: 8% 0 5%;
   display: grid;
   grid-template-columns: 15% 85%;
@@ -267,9 +268,4 @@ footer {
   text-align: center;
   padding: 15px;
   background-color: #d0e5e6;
-}
-
-@media only-screen and (max width: 1280px);
-@media screen {
-  max-width: 600px;
 }
