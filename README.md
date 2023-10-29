@@ -37,7 +37,7 @@ You can navigate through the sections using the naviagtion bar at the top of the
 You can navigate to previous portfolio work in the work section.
 You can contact me or view my social media using the links in the contact section.
 
-<img src="/starter/images/screencapture-127-0-0-1-5500-index-html-2023-10-29-15_45_34.png" alt="Frontent Portfolio Website">
+<img src="/images/screencapture-127-0-0-1-5500-index-html-2023-10-29-15_45_34.png" alt="Frontent Portfolio Website">
 
 ## Credits
 
