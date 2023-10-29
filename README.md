@@ -48,18 +48,8 @@ I did use a tutorial to add scrolling text and the source code for this can be f
 
 This website uses an MIT licence.
 
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Contributing
 
 Unless previously mentioned, there were no additional contributing members to the creation of this website.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
