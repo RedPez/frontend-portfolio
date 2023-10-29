@@ -1,3 +1,7 @@
+:root {
+  --borderColor: #ff6200;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,7 +35,8 @@ navBar {
   align-content: center;
   padding-top: 12px;
   padding-bottom: 1%;
-  border-bottom: 5px solid #ff6200;
+  border-bottom: 5px solid;
+  border-color: var(--borderColor);
 }
 
 navBar li {
@@ -114,10 +119,12 @@ header {
 /* About me styles */
 
 #about-me {
-  margin: 10% 5%;
+  margin: 10% 9% 10% 5%;
   display: grid;
   grid-template-columns: 15% 85%;
   grid-template-areas: "aboutTitle aboutText";
+  background-color: white;
+  padding: 100px 50px;
 }
 
 #aboutTitle {
@@ -138,14 +145,15 @@ header {
   background-size: cover;
   height: 300px;
   width: 210px;
-  border-bottom: 5px solid #ff6200;
+  border-bottom: 5px solid;
+  border-color: var(--borderColor);
   border-radius: 50px 5px;
 }
 
 /* Portfolio Styles */
 
 #portfolioMain {
-  margin: 0px 5%;
+  margin: 0px 5% 0px 8%;
   display: grid;
   grid-template-columns: 15% 85%;
   grid-template-areas: "  workTitle portfolioGrid";
@@ -153,7 +161,7 @@ header {
 
 /* Portfolio image grid */
 #portfolioGrid {
-  margin: 0px 5%;
+  margin: 0px 5% 0px 0px;
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -164,7 +172,7 @@ header {
 }
 #portfolio1 {
   grid-area: portfolio1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/corn1.png");
 }
 #portfolio2 {
   grid-area: portfolio2;
@@ -202,7 +210,8 @@ header {
   width: auto;
   color: rgb(0, 0, 0);
   font-size: 18px;
-  border-bottom: 5px solid #ff6200;
+  border-bottom: 5px solid;
+  border-color: var(--borderColor);
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -212,8 +221,8 @@ header {
 
 /* Contact Styles */
 #contactMain {
-  margin: 5% 5%;
-  padding: 8% 0;
+  margin: 5% 5% 7%;
+  padding: 8% 0 5%;
   display: grid;
   grid-template-columns: 15% 85%;
   grid-template-areas: "contactTitle contactGrid";
@@ -222,6 +231,8 @@ header {
 #contactGrid {
   margin: 0px 5%;
   display: flex;
+  padding-left: 17%;
+  padding-right: 35%;
 }
 
 .contactGridArea {
@@ -230,29 +241,32 @@ header {
   flex-grow: 1;
   cursor: pointer;
   height: 80px;
-  width: 80px;
-  margin: 5px;
-}
-
-.contactHeading {
-  flex-direction: row;
-  flex-grow: 1;
-  padding: 10px;
-  height: fit-content;
-  width: auto;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
+  margin: 0px 20px;
+  border-radius: 100%;
 }
 
 #contactTitle {
   display: grid;
   margin: 0px 5%;
+  padding: 10% 0px;
+}
+
+#contact1 {
+  margin-left: 0px;
+}
+
+#contact1,
+#contact2,
+#contact3,
+#contact4 {
+  filter: drop-shadow(3px 3px 1px rgb(182, 185, 182));
 }
 
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 0px 0px 30px;
+  padding: 15px;
+  background-color: #d0e5e6;
 }
 
 @media only-screen and (max width: 1280px);
