@@ -37,9 +37,7 @@ You can navigate through the sections using the naviagtion bar at the top of the
 You can navigate to previous portfolio work in the work section.
 You can contact me or view my social media using the links in the contact section.
 
-```md
-![Screenshot of Porfolio](/starter/images/screencapture-127-0-0-1-5500-index-html-2023-10-29-15_45_34.png)
-```
+<img src="/starter/images/screencapture-127-0-0-1-5500-index-html-2023-10-29-15_45_34.png" alt="Frontent Portfolio Website">
 
 ## Credits
 
@@ -48,11 +46,7 @@ I did use a tutorial to add scrolling text and the source code for this can be f
 
 ## License
 
-This website uses an MIT licence:
-
-```md
-![MIT License](/LICENSE)
-```
+This website uses an MIT licence.
 
 ---
 
