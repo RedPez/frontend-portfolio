@@ -17,15 +17,9 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 - When images of the applications are clicked then the user is taken to that deployed application
 - When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
-Here is a link to the deployed website:
-
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
+Here is a link to the deployed website: (https://redpez.github.io/frontend-portfolio)
 
 ## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -34,47 +28,39 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+There are no unique installation requirements for this product.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+The website has simple functionality.
+You can navigate through the sections using the naviagtion bar at the top of the site.
+You can navigate to previous portfolio work in the work section.
+You can contact me or view my social media using the links in the contact section.
 
 ```md
-![alt text](assets/images/screenshot.png)
+![Screenshot of Porfolio](/starter/images/screencapture-127-0-0-1-5500-index-html-2023-10-29-15_45_34.png)
 ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+The majority of this website was coded using my own knowledge and the material provided to us on the course.
+I did use a tutorial to add scrolling text and the source code for this can be found here: (https://css-tricks.com/snippets/css/typewriter-effect/)
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+This website uses an MIT licence:
+
+```md
+![MIT License](/LICENSE)
+```
 
 ---
 
 🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
 ## Contributing
 
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+Unless previously mentioned, there were no additional contributing members to the creation of this website.
 
 ## Tests
 
