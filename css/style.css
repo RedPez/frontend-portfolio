@@ -271,6 +271,8 @@ header {
   filter: drop-shadow(3px 3px 1px rgb(182, 185, 182));
 }
 
+/* Media queries */
+
 @media screen and (max-width: 1280px) {
   .heroImage {
     max-height: 700px;
